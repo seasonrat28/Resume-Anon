@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | อานนท์ รัตนพันธ์ - IT Support Specialist</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap');
+:root { --accent:#3b82f6; --emerald:#10b981; }
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Thai','Inter',sans-serif;background:#0a0f1e;color:#1e293b;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.page-wrap{position:relative;z-index:1}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideL{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideR{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(59,130,246,.4)}50%{box-shadow:0 0 0 8px rgba(59,130,246,0)}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.reveal{opacity:0;transform:translateY(12px);transition:all .5s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+
+.resume-box{max-width:1100px;margin:0 auto;background:#fff;border-radius:2.5rem;overflow:hidden;box-shadow:0 60px 120px -30px rgba(0,0,0,.6),0 0 80px rgba(59,130,246,.07);animation:fadeUp .8s ease-out}
+
+.sidebar{background:linear-gradient(180deg,#0f172a,#162038);position:relative;overflow:hidden;animation:slideL .6s ease-out .2s both}
+.sidebar::before{content:'';position:absolute;top:-100px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(59,130,246,.12),transparent 70%);border-radius:50%}
+.sidebar::after{content:'';position:absolute;bottom:-80px;left:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(16,185,129,.08),transparent 70%);border-radius:50%}
+.main-content{animation:slideR .6s ease-out .3s both}
+
+.avatar-wrap{position:relative;display:inline-block}
+.avatar-wrap::before{content:'';position:absolute;inset:-4px;background:linear-gradient(135deg,var(--accent),var(--emerald));background-size:200% 200%;animation:gradientShift 4s ease infinite;border-radius:1.5rem;z-index:0;opacity:.7}
+.avatar-wrap img{position:relative;z-index:1;border-radius:1.25rem;width:160px;height:160px;object-fit:cover}
+.status-dot{position:absolute;bottom:2px;right:2px;width:16px;height:16px;background:#22c55e;border:3px solid #0f172a;border-radius:50%;z-index:2;animation:pulseGlow 2s infinite}
+
+.c-pill{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:10px 14px;border-radius:12px;font-size:13px;color:#94a3b8;transition:all .25s;text-decoration:none}
+.c-pill:hover{background:rgba(255,255,255,.1);color:#e2e8f0;transform:translateX(4px);border-color:rgba(59,130,246,.3)}
+
+.t-badge{display:inline-block;padding:5px 12px;border-radius:8px;font-size:11px;font-weight:700;background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.2);transition:all .2s;cursor:default}
+.t-badge:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(59,130,246,.3)}
+
+.comp-item{display:flex;align-items:center;gap:10px;font-size:12px;color:#cbd5e1;padding:6px 0}
+
+.metric-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px 14px;text-align:center;transition:all .3s}
+.metric-card:hover{background:rgba(59,130,246,.08);border-color:rgba(59,130,246,.2);transform:translateY(-3px)}
+.metric-num{font-size:28px;font-weight:900;background:linear-gradient(135deg,#60a5fa,#34d399);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;line-height:1}
+.metric-label{font-size:10px;color:#64748b;margin-top:6px;font-weight:600;letter-spacing:.05em}
+
+.sb-label{color:#fff;font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sb-label::before{content:'';width:24px;height:2px;background:linear-gradient(90deg,var(--accent),var(--emerald));border-radius:1px}
+
+.s-title{position:relative;font-weight:800;font-size:1.4rem;color:#0f172a;padding-bottom:12px;margin-bottom:28px}
+.s-title::after{content:'';position:absolute;bottom:0;left:0;width:40px;height:4px;background:linear-gradient(90deg,var(--accent),var(--emerald));border-radius:2px}
+
+.tl-item{position:relative;padding-left:32px;border-left:2px solid #e2e8f0;padding-bottom:40px}
+.tl-item:last-child{border-left-color:transparent;padding-bottom:0}
+.tl-dot{width:18px;height:18px;background:#fff;border:4px solid var(--accent);border-radius:50%;position:absolute;left:-10px;top:4px;z-index:2;box-shadow:0 0 0 4px rgba(59,130,246,.1);transition:transform .2s,box-shadow .2s}
+.tl-item:hover .tl-dot{transform:scale(1.3);box-shadow:0 0 0 6px rgba(59,130,246,.15)}
+.tl-dot-past{background:#e2e8f0;border-color:#94a3b8;box-shadow:none}
+
+.hl-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:16px;display:flex;gap:14px;transition:all .3s}
+.hl-card:hover{border-color:#bfdbfe;box-shadow:0 4px 20px rgba(59,130,246,.06);transform:translateY(-2px)}
+
+.exp-li{display:flex;gap:10px;font-size:14px;color:#475569;line-height:1.6}
+.exp-li i{flex-shrink:0;margin-top:3px}
+
+.past-li{font-size:13px;color:#64748b;padding-left:16px;position:relative;line-height:1.7}
+.past-li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;background:#94a3b8;border-radius:50%}
+
+.badge-now{background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;font-size:9px;font-weight:800;padding:4px 12px;border-radius:50px;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 2px 8px rgba(37,99,235,.3);white-space:nowrap}
+.badge-date{color:#94a3b8;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+
+.btn-save{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#fff,#f1f5f9);color:#0f172a;font-weight:700;font-size:14px;padding:14px;border-radius:16px;border:none;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.btn-save:hover{background:linear-gradient(135deg,var(--accent),#2563eb);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(59,130,246,.3)}
+
+@media print{
+  @page { margin: 0; }
+  body { background: #fff !important; padding: 0 !important; margin: 0 !important; min-height: auto !important; }
+  .no-print { display: none !important; }
+  .resume-box { box-shadow: none !important; border-radius: 0 !important; max-width: 100% !important; margin: 0 !important; animation: none !important; border: none !important; }
+  .sidebar, .main-content { animation: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  #particles { display: none !important; }
+}
+</style>
+</head>
+<body class="p-4 md:p-10">
+<canvas id="particles"></canvas>
+<div class="page-wrap">
+<div class="resume-box flex flex-col lg:flex-row">
+
+<!-- SIDEBAR -->
+<aside class="sidebar lg:w-[36%] text-slate-300 p-10 lg:p-12 flex flex-col relative z-10">
+
+  <!-- Profile -->
+  <div class="text-center lg:text-left mb-10">
+    <div class="avatar-wrap mb-6 mx-auto lg:mx-0">
+      <img src="Anon.jpg" alt="อานนท์ รัตนพันธ์"
+           onerror="this.src='https://ui-avatars.com/api/?name=AR&background=2563eb&color=fff&size=200&bold=true&font-size=0.4'">
+      <div class="status-dot" title="พร้อมเริ่มงาน"></div>
+    </div>
+    <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight mb-1">นายอานนท์<br>รัตนพันธ์</h1>
+    <p class="text-xs text-slate-500 font-medium mb-3">Anon Ratnapan</p>
+    <p class="text-blue-400 font-bold uppercase tracking-[0.2em] text-[11px]">IT Support Specialist</p>
+  </div>
+
+  <!-- Contact & Links -->
+  <div class="space-y-3 mb-10">
+    <a href="mailto:season.rat@gmail.com" class="c-pill hover:bg-white/10 transition-colors"><i data-lucide="mail" class="w-4 h-4 text-blue-400"></i><span>season.rat@gmail.com</span></a>
+    <div class="c-pill"><i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i><span>083-428-1628</span></div>
+    <a href="https://line.me/ti/p/~seamone.28" target="_blank" class="c-pill hover:bg-white/10 transition-colors"><i data-lucide="message-square" class="w-4 h-4 text-green-400"></i><span>Line: seamone.28</span></a>
+    <div class="c-pill"><i data-lucide="map-pin" class="w-4 h-4 text-red-400"></i><span>เสนานิคม, จตุจักร, กรุงเทพฯ</span></div>
+    
+    <!-- Professional Links (Clickable) -->
+    <a href="https://www.facebook.com/season.rat28?locale=th_TH" target="_blank" class="c-pill hover:bg-white/10 transition-colors border border-blue-500/20 bg-blue-500/5">
+      <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+      <span class="text-blue-200">Facebook: ซอ อัน</span>
+    </a>
+  </div>
+
+  <!-- Personal Info -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Personal Info</div>
+    <div class="space-y-2.5">
+      <div class="c-pill"><i data-lucide="cake" class="w-4 h-4 text-pink-400"></i><span>28 เมษายน 2546 (อายุ 23 ปี)</span></div>
+      <div class="c-pill"><i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i><span>ได้รับการยกเว้นทหาร (ใบดำ)</span></div>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Languages</div>
+    <div class="space-y-3">
+      <div>
+        <div class="flex justify-between text-xs mb-1.5"><span class="text-slate-200 font-semibold">ภาษาไทย</span><span class="text-emerald-400 font-bold">เจ้าของภาษา</span></div>
+        <div class="h-1.5 bg-white/10 rounded-full overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-blue-500 to-emerald-400" style="width:100%"></div></div>
+      </div>
+      <div>
+        <div class="flex justify-between text-xs mb-1.5"><span class="text-slate-200 font-semibold">English</span><span class="text-slate-400 font-bold">พื้นฐาน</span></div>
+        <div class="h-1.5 bg-white/10 rounded-full overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-blue-500 to-emerald-400" style="width:30%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Metrics -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Key Metrics</div>
+    <div class="grid grid-cols-3 gap-2">
+      <div class="metric-card">
+        <div class="metric-num" data-count="100" data-suffix="+">0</div>
+        <div class="metric-label">Users</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-num" data-count="3" data-suffix="">0</div>
+        <div class="metric-label">องค์กร</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-num" data-count="24" data-suffix="/7">0</div>
+        <div class="metric-label">Support</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Technical Stack</div>
+    <div class="flex flex-wrap gap-2">
+      <span class="t-badge">StarCat11</span>
+      <span class="t-badge">AnyDesk</span>
+      <span class="t-badge">UltraVNC</span>
+      <span class="t-badge">Fuji Apeos</span>
+      <span class="t-badge">Fuji Xerox</span>
+      <span class="t-badge">IZPAL HIS</span>
+      <span class="t-badge">Active Directory</span>
+      <span class="t-badge">TCP/IP</span>
+      <span class="t-badge">Windows 10/11</span>
+    </div>
+  </div>
+
+  <!-- Core Competencies -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Core Competencies</div>
+    <div class="space-y-1">
+      <div class="comp-item"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Cross-Functional Collaboration</div>
+      <div class="comp-item"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Asset Life-cycle Management</div>
+      <div class="comp-item"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> SLA-Driven Support</div>
+      <div class="comp-item"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Healthcare IT Operations</div>
+      <div class="comp-item"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Remote & On-site Troubleshooting</div>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Education</div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+      <div class="flex items-start gap-3">
+        <div class="w-9 h-9 rounded-xl bg-blue-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+          <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">ปวช. เทคโนโลยีสารสนเทศ (IT)</h3>
+          <p class="text-blue-400 font-semibold text-xs mt-1">วิทยาลัยเทคนิคมาบตาพุด</p>
+          <p class="text-slate-500 text-[11px] mt-1.5 flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-3 h-3"></i> สำเร็จการศึกษา พ.ศ. 2563
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hobbies & Interests -->
+  <div class="mb-10 reveal">
+    <div class="sb-label">Hobbies & Interests</div>
+    <div class="space-y-1">
+      <div class="comp-item"><i data-lucide="lightbulb" class="w-4 h-4 text-amber-400"></i> เรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ</div>
+      <div class="comp-item"><i data-lucide="cpu" class="w-4 h-4 text-purple-400"></i> ประกอบ/ซ่อมคอมพิวเตอร์ (Hardware DIY)</div>
+      <div class="comp-item"><i data-lucide="network" class="w-4 h-4 text-emerald-400"></i> ศึกษาด้าน Network / ระบบเบื้องต้น</div>
+      <div class="comp-item"><i data-lucide="music" class="w-4 h-4 text-blue-400"></i> เล่นดนตรี</div>
+      <div class="comp-item"><i data-lucide="camera" class="w-4 h-4 text-pink-400"></i> ถ่ายรูป</div>
+    </div>
+  </div>
+
+  <!-- Save PDF -->
+  <div class="mt-auto no-print">
+    <button onclick="window.print()" class="btn-save"><i data-lucide="download" class="w-5 h-5"></i> บันทึกเรซูเม่ (PDF)</button>
+  </div>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main-content lg:w-[64%] p-8 lg:p-14">
+
+  <!-- Profile -->
+  <section class="mb-14">
+    <h2 class="s-title">Professional Profile</h2>
+    <p class="text-slate-600 text-[15px] leading-[1.8]">
+      มีประสบการณ์ทำงานด้าน IT Support ในระบบโรงพยาบาล (Healthcare IT) มีทักษะในการประสานงานร่วมกับทีมระบบต่างๆ (<strong class="text-slate-800">Infra, HIS, Oracle, CIS</strong>) เพื่อให้ระบบทำงานได้ราบรื่น พร้อมความสามารถในการใช้เครื่องมือ Remote Administration และดูแลระบบเครื่องพิมพ์ในองค์กร มุ่งมั่นแก้ไขปัญหาให้ผู้ใช้งานอย่างถูกต้องและรวดเร็ว
+    </p>
+  </section>
+
+  <!-- Key Projects & Expertise -->
+  <section class="mb-14 reveal">
+    <h2 class="s-title">Key Projects & Expertise</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <!-- Project 1 -->
+      <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-5 hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl bg-amber-100/80 flex items-center justify-center mb-3">
+          <i data-lucide="database" class="w-5 h-5 text-amber-600"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 text-sm mb-2">IP Printer Management System</h3>
+        <p class="text-[13px] text-slate-600 leading-relaxed">
+          ออกแบบและพัฒนาระบบฐานข้อมูล <strong class="text-slate-800">IP Printer Database (Version 1.4)</strong> ของโรงพยาบาล เพื่อควบคุมอุปกรณ์ให้พร้อมใช้งานตลอดเวลา และเพิ่มประสิทธิภาพในการทำ Preventive Maintenance (PM)
+        </p>
+      </div>
+
+      <!-- Expertise 2 -->
+      <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-5 hover:shadow-md transition-all hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-xl bg-blue-100/80 flex items-center justify-center mb-3">
+          <i data-lucide="activity" class="w-5 h-5 text-blue-600"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 text-sm mb-2">Healthcare IT Environment</h3>
+        <p class="text-[13px] text-slate-600 leading-relaxed">
+          เชี่ยวชาญในการซัพพอร์ตระบบที่มีความกดดันสูง (High-pressure) คุ้นชินกับระบบ <strong class="text-slate-800">HIS (IZPAL) และ CIS</strong> รวมถึงการทำงานร่วมกับทีมแพทย์และพยาบาลภายใต้มาตรฐาน SLA ที่เคร่งครัด
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Working Philosophy & Soft Skills -->
+  <section class="mb-14 reveal">
+    <h2 class="s-title">Working Philosophy & Soft Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div class="bg-slate-50 border border-slate-100 p-4 rounded-xl text-center hover:shadow-sm transition-shadow hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="heart-handshake" class="w-5 h-5 text-rose-500"></i>
+        </div>
+        <h4 class="font-bold text-slate-700 text-[13px] mb-1">Service Mind</h4>
+        <p class="text-[11px] text-slate-500 leading-relaxed">ให้บริการด้วยความเต็มใจ และเข้าใจในความเร่งด่วนของงานโรงพยาบาล</p>
+      </div>
+      
+      <div class="bg-slate-50 border border-slate-100 p-4 rounded-xl text-center hover:shadow-sm transition-shadow hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="zap" class="w-5 h-5 text-amber-500"></i>
+        </div>
+        <h4 class="font-bold text-slate-700 text-[13px] mb-1">Fast Response</h4>
+        <p class="text-[11px] text-slate-500 leading-relaxed">ตอบสนองต่อปัญหาอย่างรวดเร็ว (SLA) เพื่อลดผลกระทบต่อผู้ป่วยและการทำงาน</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 p-4 rounded-xl text-center hover:shadow-sm transition-shadow hover:-translate-y-1">
+        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="users-2" class="w-5 h-5 text-blue-500"></i>
+        </div>
+        <h4 class="font-bold text-slate-700 text-[13px] mb-1">Team Player</h4>
+        <p class="text-[11px] text-slate-500 leading-relaxed">ประสานงานร่วมกับทีม Vendor และ User ได้อย่างราบรื่นและเป็นมืออาชีพ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="mb-14">
+    <h2 class="s-title">Professional Experience</h2>
+
+    <!-- Current: Paolo Kaset -->
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-start gap-2 mb-4">
+        <div>
+          <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">IT Support Specialist</h3>
+          <p class="text-blue-600 font-bold text-sm mt-1">Wilcon Distribution Co., Ltd. <span class="text-slate-300 mx-1">|</span> <span class="text-slate-600">On-site @ รพ.เปาโลเกษตร</span></p>
+        </div>
+        <span class="badge-now mt-1">ม.ค. 2565 – ปัจจุบัน</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+        <div class="hl-card"><i data-lucide="users" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i><p class="text-xs text-slate-600">ทำงานร่วมกับทีม <strong>IT Infra, IT HIS (IZPAL), IT Oracle และ IT CIS</strong> เพื่อสนับสนุนระบบสารสนเทศของโรงพยาบาลในเครือ <strong>พญาไท และ เปาโล</strong></p></div>
+        <div class="hl-card"><i data-lucide="printer" class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5"></i><p class="text-xs text-slate-600">ดูแลเครื่องพิมพ์ <strong>Fuji Apeos 4620 SZ</strong> ผ่านระบบ <strong>JF (Job Flow)</strong> ให้พร้อมใช้งาน 24/7</p></div>
+      </div>
+      <ul class="space-y-3">
+        <li class="exp-li"><i data-lucide="server" class="w-4 h-4 text-purple-500"></i><span>ดูแลและบำรุงรักษาระบบ <strong>Server และ NAS (Network Attached Storage)</strong> ให้พร้อมใช้งานและข้อมูลส่วนกลางปลอดภัย</span></li>
+        <li class="exp-li"><i data-lucide="database" class="w-4 h-4 text-amber-500"></i><span>ออกแบบและจัดทำฐานข้อมูล <strong>IP Printer Database</strong> เพื่อใช้บริหารจัดการและทำ Preventive Maintenance (PM) อย่างเป็นระบบ</span></li>
+        <li class="exp-li"><i data-lucide="headset" class="w-4 h-4 text-pink-500"></i><span>ปฏิบัติหน้าที่ <strong>IT Helpdesk</strong> รับแจ้งปัญหา ให้คำปรึกษา และแก้ไขปัญหาให้ผู้ใช้งาน (User Support) อย่างรวดเร็ว</span></li>
+        <li class="exp-li"><i data-lucide="monitor-smartphone" class="w-4 h-4 text-blue-500"></i><span>ให้บริการ Remote Support ผ่าน <strong>StarCat11, AnyDesk, UltraVNC</strong> แก้ไขปัญหาให้บุคลากรทางการแพทย์แบบ Real-time</span></li>
+        <li class="exp-li"><i data-lucide="file-check" class="w-4 h-4 text-blue-500"></i><span>จัดทำคู่มือเทคนิค (Documentation) และบริหารจัดการทรัพย์สินไอทีผ่านระบบ Inventory</span></li>
+      </ul>
+    </div>
+
+    <!-- M.R.DIY -->
+    <div class="tl-item">
+      <div class="tl-dot tl-dot-past"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-start gap-2 mb-3">
+        <div>
+          <h3 class="text-lg font-bold text-slate-700 uppercase">พนักงาน (Store Staff)</h3>
+          <p class="text-slate-500 font-semibold text-sm mt-0.5">M.R.DIY สาขาที่ 321 โลตัส หลักสี่</p>
+        </div>
+        <span class="badge-date mt-1">พ.ค. 2563 – ธ.ค. 2564</span>
+      </div>
+      <ul class="space-y-2">
+        <li class="past-li">ให้บริการและให้คำแนะนำสินค้าแก่ลูกค้า เพื่อสร้างความพึงพอใจในการซื้อ</li>
+        <li class="past-li">รับผิดชอบจัดเรียงและเติมสินค้าบนชั้นวาง ให้พื้นที่ขายพร้อมและดึงดูดลูกค้า</li>
+        <li class="past-li">ควบคุมการรับ-จ่ายสินค้า และตรวจเช็คสต็อกตามระบบอย่างสม่ำเสมอ</li>
+        <li class="past-li">ดูแลความเรียบร้อยและความสะอาดของพื้นที่ขาย ตามมาตรฐานของบริษัท</li>
+      </ul>
+    </div>
+
+    <!-- PTT -->
+    <div class="tl-item">
+      <div class="tl-dot tl-dot-past"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-start gap-2 mb-3">
+        <div>
+          <h3 class="text-lg font-bold text-slate-700 uppercase">IT Support Intern</h3>
+          <p class="text-slate-500 font-semibold text-sm mt-0.5">โรงแยกก๊าซธรรมชาติระยอง (PTT Group)</p>
+        </div>
+        <span class="badge-date mt-1">มี.ค. 2562 – ก.ย. 2562</span>
+      </div>
+      <ul class="space-y-2">
+        <li class="past-li">สนับสนุนการดูแลระบบคอมพิวเตอร์, เครือข่าย และเซิร์ฟเวอร์เบื้องต้น ในพื้นที่ความปลอดภัยสูง</li>
+        <li class="past-li">ให้ความช่วยเหลือและแก้ไขปัญหาการใช้งานคอมพิวเตอร์และซอฟต์แวร์แก่พนักงาน (User Support)</li>
+        <li class="past-li">ศึกษามาตรการความปลอดภัยทางไซเบอร์และระบบควบคุมภายในโรงงาน</li>
+        <li class="past-li">ติดตั้งและตั้งค่าโปรแกรมพื้นฐานภายใต้มาตรฐานองค์กรขนาดใหญ่</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="mt-4 pt-8 border-t border-slate-200/60 reveal">
+    <div class="flex items-center justify-between bg-slate-50/50 rounded-xl p-6 border border-slate-100">
+      <div>
+        <h3 class="text-sm font-black text-slate-800 uppercase tracking-widest mb-1">Professional References</h3>
+        <p class="text-xs text-slate-500 font-medium">พร้อมให้ข้อมูลบุคคลอ้างอิงและเอกสารรับรองการทำงานเมื่อมีการร้องขอ (Available upon request)</p>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+        <i data-lucide="shield-check" class="w-5 h-5 text-blue-500"></i>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<footer class="mt-8 text-center no-print pb-6">
+  <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.3em] opacity-40">Reliability · Service Excellence · Technical Expertise</p>
+</footer>
+</div>
+
+<script>
+lucide.createIcons();
+
+// Particle network background
+(function(){
+  const c=document.getElementById('particles'),ctx=c.getContext('2d');
+  let w,h,dots=[];
+  function resize(){w=c.width=innerWidth;h=c.height=innerHeight}
+  addEventListener('resize',resize);resize();
+  for(let i=0;i<50;i++)dots.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.5+.5,dx:(Math.random()-.5)*.3,dy:(Math.random()-.5)*.3,o:Math.random()*.3+.1});
+  (function draw(){
+    ctx.clearRect(0,0,w,h);
+    dots.forEach(d=>{d.x+=d.dx;d.y+=d.dy;if(d.x<0)d.x=w;if(d.x>w)d.x=0;if(d.y<0)d.y=h;if(d.y>h)d.y=0;ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle='rgba(59,130,246,'+d.o+')';ctx.fill()});
+    for(let i=0;i<dots.length;i++)for(let j=i+1;j<dots.length;j++){let dx=dots[i].x-dots[j].x,dy=dots[i].y-dots[j].y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<120){ctx.beginPath();ctx.moveTo(dots[i].x,dots[i].y);ctx.lineTo(dots[j].x,dots[j].y);ctx.strokeStyle='rgba(59,130,246,'+(0.05*(1-dist/120))+')';ctx.stroke()}}
+    requestAnimationFrame(draw);
+  })();
+})();
+
+// Count-up
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const t=+el.dataset.count,s=el.dataset.suffix||'';
+  let cur=0;const step=Math.max(1,Math.floor(t/30));
+  const timer=setInterval(()=>{cur+=step;if(cur>=t){cur=t;clearInterval(timer)}el.textContent=cur+s},30);
+});
+
+// Scroll reveal
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
