@@ -1,0 +1,23 @@
+# Dependency directories (โฟลเดอร์เก็บไลบรารี ห้ามเอาขึ้นเด็ดขาดเพราะมันใหญ่มาก)
+node_modules/
+jspm_packages/
+
+# Build outputs (ไฟล์ที่ได้จากการคอมไพล์เพื่อเตรียมรันหน้าเว็บ)
+.next/
+out/
+dist/
+build/
+
+# Debug logs (ไฟล์บันทึกประวัติเวลาโค้ดพัง)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files (ไฟล์ระบบของคอมพิวเตอร์เรา)
+.DS_Store
+Thumbs.db
+
+# Local env files (ไฟล์เก็บรหัสผ่านหรือความลับ ห้ามเอาขึ้นเด็ดขาด)
+.env
+.env.local
