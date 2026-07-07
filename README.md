@@ -1,167 +1,102 @@
+<div align="center">
+
 # 👋 Hi, I'm Anon Ratnapan
 
-**IT Support Specialist | Healthcare IT | Network & Printer Support**
+### IT Support Specialist
+
+Supporting Enterprise & Healthcare IT Infrastructure
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white)
 
 📍 Bangkok, Thailand
 
+</div>
+
 ---
 
-## About Me
+## 👨‍💻 About Me
 
-I am an IT Support Specialist with hands-on experience supporting enterprise and healthcare IT environments.
+I am an IT Support Specialist with experience supporting enterprise and healthcare environments.
 
-My experience includes:
+My daily responsibilities include:
 
 - IT Support
 - Printer Infrastructure
-- Network Troubleshooting
 - Windows Administration
-- Hardware & Software Support
-- Preventive Maintenance
 - Active Directory
-- User Support
+- Hardware & Software Troubleshooting
+- Network Troubleshooting
+- Preventive Maintenance
 - Vendor Coordination
 
-I enjoy solving technical problems and continuously learning new technologies.
+I enjoy solving technical problems and continuously improving my IT skills.
 
 ---
 
-## Technical Skills
+## 🛠 Technical Skills
 
-### Operating Systems
-
-- Windows 10
-- Windows 11
-- Windows Server
-- Linux
-
-### Networking
-
-- TCP/IP
-- IP Configuration
-- DNS
-- DHCP
-- Network Printer
-
-### IT Support
-
-- Active Directory
-- Hardware Troubleshooting
-- Software Installation
-- Preventive Maintenance
-- User Support
-
-### Remote Support
-
-- TeamViewer
-- AnyDesk
-- UltraViewer
-
-### Programming
-
-- JavaScript
-- TypeScript
-- Node.js
-- Python
-- C#
-- C++
-
-### Tools
-
-- Git
-- GitHub
-- Visual Studio Code
+| Category | Skills |
+|-----------|--------|
+| Operating Systems | Windows 10, Windows 11, Windows Server, Linux |
+| Networking | TCP/IP, DNS, DHCP, IP Configuration, Network Printer |
+| IT Support | Active Directory, Troubleshooting, Preventive Maintenance |
+| Remote Support | TeamViewer, AnyDesk, UltraViewer |
+| Programming | JavaScript, TypeScript, Python, C#, C++ |
+| Tools | Git, GitHub, Visual Studio Code |
 
 ---
 
-## Professional Experience
+## 💼 Experience
 
 ### IT Support Printer
 
 **Wilcon Distribution Co., Ltd.**
 
-*On-site at Paolo Kaset Hospital*
-
-January 2026 – Present
-
-- Support hospital-wide printer infrastructure
+- Support hospital printer infrastructure
 - Install and configure network printers
-- Troubleshoot hardware and software issues
 - Perform preventive maintenance
-- Manage printer inventory
+- Troubleshoot hardware and software issues
 - Coordinate with vendors
-
----
 
 ### On-site IT Support
 
 **Thai Meidensha Co., Ltd.**
 
-December 2022 – April 2025
-
-- Supported IT systems at construction sites
-- Installed network printers and plotters
-- Maintained laptops and desktop computers
-- Managed temporary office networks
-- Installed CCTV systems
+- IT Support
+- Network Setup
+- Printer Installation
+- CCTV Installation
+- Hardware Maintenance
 
 ---
 
-### IT Support Intern
+## 📚 Currently Learning
 
-**PTT Gas Separation Plant**
-
-January 2019 – January 2020
-
-- Supported computer and network systems
-- Installed software
-- Assisted users
-- Learned enterprise cybersecurity practices
+- Windows Server
+- Active Directory
+- PowerShell
+- Docker
+- Linux Administration
 
 ---
 
-## Projects
+## 🎯 Career Goal
 
-### Portfolio Website
-
-Personal portfolio built with HTML and Tailwind CSS.
-
-### Resume Website
-
-Responsive online resume hosted with GitHub Pages.
-
-### GitHub
-
-More IT projects will be added continuously.
+To grow as an IT Support and System Administrator while continuously improving my skills in Windows Server, Networking, and Infrastructure.
 
 ---
 
-## Education
+## 🌐 Portfolio
 
-Vocational Certificate
-
-Information Technology
-
-Map Ta Phut Technical College
+- Website: https://seasonrat28.github.io/Resume-Anon/
+- GitHub: https://github.com/seasonrat28
 
 ---
 
-## Languages
-
-Thai (Native)
-
-English (Basic)
-
----
-
-## Contact
+## 📫 Contact
 
 📧 season.rat@gmail.com
-
-📱 083-428-1628
-
-GitHub:
-https://github.com/seasonrat28
-
-Portfolio:
-https://seasonrat28.github.io/Resume-Anon/
