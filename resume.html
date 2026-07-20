@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - IT Support Print</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Sarabun', 'Tahoma', sans-serif;
+      color: #111;
+      line-height: 1.3;
+      font-size: 9.5pt;
+      background: #fff;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ส่วนหัวโปรไฟล์: รูปภาพ ชื่อ และข้อมูลติดต่อ */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 2px solid #222;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+
+    .header-info h1 {
+      font-size: 16pt;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .header-info p {
+      font-size: 9pt;
+      color: #333;
+    }
+
+    /* กล่องข้อความสรุปโปรไฟล์ */
+    .profile-box {
+      background: #f8f9fa;
+      padding: 8px 12px;
+      border-left: 3px solid #222;
+      margin-bottom: 12px;
+      font-size: 9pt;
+    }
+
+    /* หัวข้อหลัก */
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px solid #444;
+      padding-bottom: 2px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    /* รายละเอียดประสบการณ์ทำงาน */
+    .job-item { 
+      margin-bottom: 10px; 
+      page-break-inside: avoid; 
+    }
+    
+    .job-header { 
+      display: flex; 
+      justify-content: space-between; 
+      font-weight: bold; 
+      font-size: 9.5pt; 
+    }
+    
+    .company { 
+      font-style: italic; 
+      color: #333; 
+      font-size: 8.5pt; 
+      margin-bottom: 3px; 
+    }
+    
+    ul { margin-left: 16px; }
+    li { margin-bottom: 2px; }
+
+    /* ตั้งค่าโหมดสำหรับปริ้นโดยเฉพาะ */
+    @media print {
+      @page { size: A4 portrait; margin: 1cm; }
+      .container { padding: 0; width: 100%; max-width: 100%; }
+      .profile-box { background: #fff; border-left: 2px solid #000; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- ส่วนหัว: รูป ชื่อ และข้อมูลติดต่อ -->
+    <div class="header">
+      <img src="Anon.jpg" alt="Profile" class="avatar">
+      <div class="header-info">
+        <h1>อานนท์ รัตนพันธ์</h1>
+        <p><strong>IT Support Specialist (Healthcare IT)</strong></p>
+        <p>📱 โทร: 083-428-1628 | ✉️ อีเมล: season.rat28@email.com | 📍 กรุงเทพมหานคร</p>
+      </div>
+    </div>
+
+    <!-- สรุปโปรไฟล์ -->
+    <div class="profile-box">
+      มีความเชี่ยวชาญด้าน IT Support & Helpdesk (Healthcare IT) มีทักษะและความเชี่ยวชาญในการรับแจ้งเคส บริหารจัดการระบบ Helpdesk ให้บริการช่วยเหลือผู้ใช้งาน (User Support) ตลอดจนการติดตั้ง ดูแลรักษา และแก้ไขปัญหาเครื่องพิมพ์ประเภทต่างๆ ทั้งภายในสำนักงานและระบบเครือข่ายโรงพยาบาลขนาดใหญ่ เพื่อให้ระบบงานไอทีและงานพิมพ์สำคัญทำงานได้อย่างรวดเร็ว ถูกต้อง และราบรื่น ภายใต้เงื่อนไขข้อตกลงการให้บริการ (SLA)
+    </div>
+
+    <!-- ประสบการณ์ทำงาน -->
+    <div class="section-title">Professional Experience</div>
+
+    <div class="job-item">
+      <div class="job-header">
+        <span>IT SUPPORT (PRINTER & HELPDESK)</span>
+        <span>ม.ค. 2569 – ปัจจุบัน</span>
+      </div>
+      <div class="company">Wilcon Distribution Co., Ltd. | On-site @ โรงพยาบาลเปาโลเกษตร</div>
+      <ul>
+        <li>ปฏิบัติหน้าที่ IT Helpdesk & On-site Support รับแจ้ง บันทึกเคส และแก้ไขปัญหาด้านเทคโนโลยีสารสนเทศเบื้องต้นให้แก่บุคลากรทางการแพทย์และเจ้าหน้าที่</li>
+        <li>ทำงานร่วมกับทีม IT Support โรงพยาบาล เพื่อดูแลและสนับสนุนระบบงานพิมพ์ทั้งหมดภายในองค์กร</li>
+        <li>ติดตั้ง ตั้งค่า และเชื่อมต่อระบบเครื่องพิมพ์ชนิดเครือข่าย (Network / IP Printer) ให้พร้อมใช้งานร่วมกับระบบของแต่ละแผนก</li>
+        <li>เข้าตรวจสอบและแก้ไขปัญหาทางเทคนิคเฉพาะทางของเครื่องพิมพ์ (Printer Troubleshooting) เช่น กระดาษติด ปัญหาดรัม หมึกซีด หรือเครื่องพิมพ์ออฟไลน์</li>
+        <li>ดำเนินการบำรุงรักษาเชิงป้องกัน (Preventive Maintenance - PM) และทำความสะอาดเครื่องพิมพ์ประสิทธิภาพสูง (Fuji Apeos, Fuji Xerox) ตามรอบแผนงาน</li>
+        <li>ตรวจสอบนับคลังสต็อก บริหารจัดการตลับหมึก (Toner) ดรัม (Drum) และอะไหล่สำรองของเครื่องพิมพ์ให้พร้อมสำหรับการสลับเปลี่ยนใช้งานได้ตลอดเวลา</li>
+        <li>ประสานงานและส่งต่อเคสการซ่อมบำรุงร่วมกับทีมช่างเทคนิคภายนอก (Vendor) ในกรณีเครื่องพิมพ์ชำรุดเสียหายหนักหรือต้องการอะไหล่เฉพาะทาง</li>
+      </ul>
+    </div>
+
+    <div class="job-item">
+      <div class="job-header">
+        <span>STORE ASSISTANT</span>
+        <span>มิ.ย. 2568 – ธ.ค. 2569</span>
+      </div>
+      <div class="company">M.R.DIY สาขาที่ 321 โลตัส หลักสี่</div>
+      <ul>
+        <li>ให้บริการและให้คำแนะนำสินค้าแก่ลูกค้า เพื่อสร้างความพึงพอใจในการซื้อ</li>
+        <li>รับผิดชอบจัดเรียง และเติมสินค้าบนชั้นวาง ให้พื้นที่ขายพร้อมและดึงดูดลูกค้า</li>
+        <li>ควบคุมการรับ-จ่ายสินค้า และตรวจเช็คสต็อกตามระบบอย่างสม่ำเสมอ</li>
+        <li>ดูแลความเรียบร้อยและความสะอาดของพื้นที่ขาย ตามมาตรฐานของบริษัท</li>
+      </ul>
+    </div>
+
+    <div class="job-item">
+      <div class="job-header">
+        <span>ON-SITE IT SUPPORT</span>
+        <span>ธ.ค. 2565 – เม.ย. 2568</span>
+      </div>
+      <div class="company">Thai Meidensha Co., Ltd.</div>
+      <ul>
+        <li>ปฏิบัติหน้าที่สนับสนุนงานไอทีนอกสถานที่ (On-site Project Support) ประจำโครงการก่อสร้าง ปรับปรุง และขยายโรงงานของลูกค้าในต่างจังหวัด (เช่น โครงการต่อเติมรื้อถอนและก่อสร้างเพิ่ม ณ โรงน้ำตาลราชบุรี)</li>
+        <li>ติดตั้ง ตั้งค่า และดูแลระบบเครื่องพิมพ์ (Printer / Plotter) ประจำหน้างานเพื่อใช้ในการพิมพ์แบบแปลนวิศวกรรม (Blueprint / Layout Drawing) ให้แก่ทีมวิศวกรใช้ในการทำงานก่อสร้างได้อย่างรวดเร็วและไม่ติดขัด</li>
+        <li>วางระบบ ดำเนินการ และบำรุงรักษาระบบอินเทอร์เน็ตและเครือข่ายความเร็วสูงภายในสำนักงานสนามชั่วคราว (Site Office) เพื่อสนับสนุนการสื่อสารและการรับส่งข้อมูลโครงงาน</li>
+        <li>ดูแล ซ่อมบำรุง และแก้ไขปัญหาด้านเทคนิคทั้งระบบฮาร์ดแวร์และซอฟต์แวร์ของโน้ตบุ๊ก คอมพิวเตอร์ และอุปกรณ์ไอทีอื่นๆ ประจำหน้างานของทีมวิศวกรและพนักงานประจำโครงการ</li>
+        <li>ติดตั้ง ตรวจสอบความพร้อม และแก้ไขปัญหาการทำงานของระบบกล้องวงจรปิด (CCTV) เพื่อรักษาความปลอดภัยรอบบริเวณหน้างานและพื้นที่ก่อสร้างของโครงการ</li>
+      </ul>
+    </div>
+
+    <div class="job-item">
+      <div class="job-header">
+        <span>IT SUPPORT INTERN</span>
+        <span>ม.ค. 2562 – ม.ค. 2563</span>
+      </div>
+      <div class="company">โรงแยกก๊าซธรรมชาติระยอง PTT Group (นักศึกษาฝึกงาน)</div>
+      <ul>
+        <li>สนับสนุนการดูแลระบบคอมพิวเตอร์, เครือข่าย และเซิร์ฟเวอร์เบื้องต้น ในพื้นที่ความปลอดภัยสูง</li>
+        <li>ให้ความช่วยเหลือและแก้ไขปัญหาการใช้งานคอมพิวเตอร์และซอฟต์แวร์แก่พนักงาน (User Support)</li>
+        <li>ศึกษามาตรการความปลอดภัยทางไซเบอร์และระบบควบคุมภายในโรงงาน</li>
+        <li>ติดตั้ง และตั้งค่าโปรแกรมพื้นฐานภายใต้มาตรฐานองค์กรขนาดใหญ่</li>
+      </ul>
+    </div>
+
+    <!-- ความพร้อมในการเริ่มงาน -->
+    <div class="section-title">Work Commitment & Availability</div>
+    <p style="font-size: 8.5pt;">
+      พร้อมเริ่มงานได้หลังจากบอกกล่าวล่วงหน้าตามข้อตกลง (หรือภายใน 30 วันหลังจากผ่านการพิจารณาคัดเลือก) มีความยืดหยุ่นสูงในการประสานงานและการส่งมอบหน้าที่การดูแลระบบเครื่องพิมพ์เดิมอย่างเป็นมืออาชีพ เพื่อความสบายใจของทุกฝ่ายและพร้อมลุยหน้างานใหม่ได้อย่างเต็มที่
+    </p>
+
+    <!-- ปุ่มสั่งพิมพ์ (จะถูกซ่อนอัตโนมัติเวลาปริ้น) -->
+    <div class="no-print" style="text-align: center; margin: 15px 0;">
+      <button onclick="window.print()" style="padding: 10px 20px; font-size: 15px; cursor: pointer; background: #222; color: #fff; border: none; border-radius: 4px;">
+        🖨️ สั่งพิมพ์เอกสารนี้
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
