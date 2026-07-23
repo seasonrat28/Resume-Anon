@@ -74,7 +74,44 @@ body{font-family:'Noto Sans Thai','Inter',sans-serif;background:#0a0f1e;color:#1
 .btn-save{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#fff,#f1f5f9);color:#0f172a;font-weight:700;font-size:14px;padding:14px;border-radius:16px;border:none;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(0,0,0,.1)}
 .btn-save:hover{background:linear-gradient(135deg,var(--accent),#2563eb);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(59,130,246,.3)}
 
+.languages-container {
+  width: 100%;
+  max-width: 400px; /* ปรับขนาดความกว้างตามความเหมาะสมได้ค่ะ */
+}
 
+.language-item {
+  margin-bottom: 15px;
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between; /* จัดชื่ออยู่ซ้าย ตัวเลขเปอร์เซ็นต์อยู่ขวา */
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.language-percent {
+  color: #666;
+  font-weight: bold;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px; /* ความหนาของหลอด */
+  background-color: #e2e8f0; /* สีพื้นหลังหลอด */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #2563eb; /* สีหลอดแสดงความก้าวหน้า */
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+}
 
 </style>
 </head>
