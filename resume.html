@@ -59,6 +59,44 @@
       font-size: 9pt;
     }
 
+    .resume-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .highlight-card {
+      padding: 8px 10px;
+      border: 1px solid #d9dee5;
+      border-radius: 5px;
+      background: #fff;
+    }
+
+    .highlight-card strong {
+      display: block;
+      color: #2563eb;
+      font-size: 14pt;
+      line-height: 1;
+    }
+
+    .highlight-card span {
+      display: block;
+      margin-top: 3px;
+      color: #444;
+      font-size: 8pt;
+    }
+
+    .competency-strip {
+      margin-bottom: 12px;
+      color: #333;
+      font-size: 8.5pt;
+    }
+
+    .competency-strip strong {
+      color: #111;
+    }
+
     /* หัวข้อหลัก */
     .section-title {
       font-size: 10.5pt;
@@ -205,6 +243,10 @@
         bottom:15px;
     }
 
+  .resume-highlights{
+    grid-template-columns:1fr;
+  }
+
     .fab-btn{
         justify-content:center;
         width:100%;
@@ -259,6 +301,17 @@
     <div class="profile-box">
       มีความเชี่ยวชาญด้าน IT Support & Helpdesk (Healthcare IT) มีทักษะและความเชี่ยวชาญในการรับแจ้งเคส บริหารจัดการระบบ Helpdesk ให้บริการช่วยเหลือผู้ใช้งาน (User Support) ตลอดจนการติดตั้ง ดูแลรักษา และแก้ไขปัญหาเครื่องพิมพ์ประเภทต่างๆ ทั้งภายในสำนักงานและระบบเครือข่ายโรงพยาบาลขนาดใหญ่ เพื่อให้ระบบงานไอทีและงานพิมพ์สำคัญทำงานได้อย่างรวดเร็ว ถูกต้อง และราบรื่น ภายใต้เงื่อนไขข้อตกลงการให้บริการ (SLA)
     </div>
+
+    <div class="resume-highlights" aria-label="Career highlights">
+      <div class="highlight-card"><strong>3+</strong><span>Years of IT Support</span></div>
+      <div class="highlight-card"><strong>250+</strong><span>Users Supported</span></div>
+      <div class="highlight-card"><strong>50+</strong><span>Printers Managed</span></div>
+    </div>
+
+    <p class="competency-strip">
+      <strong>Core Technical Stack:</strong>
+      Windows 10/11 · Windows Server · Linux · Active Directory · TCP/IP · IP Management · DNS · DHCP · StarCat 11 Enterprise Console · Fuji Apeos · Fuji Xerox · SLA-Driven Support
+    </p>
 
     <!-- ประสบการณ์ทำงาน -->
     <div class="section-title">Professional Experience</div>
@@ -344,7 +397,7 @@
   </button>
 
   <!-- ปุ่มพิมพ์ -->
-  <button class="fab-btn print-btn" onclick="window.print()">
+  <button class="fab-btn print-btn" type="button" onclick="window.print()">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path d="M6 9V2h12v7"/>
       <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
