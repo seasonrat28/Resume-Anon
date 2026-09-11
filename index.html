@@ -77,7 +77,9 @@
           <i data-lucide="scan-line"></i>
         </div>
         <div class="monogram">
-          <img src="Anon.jpg" alt="รูปโปรไฟล์ของนายอานนท์ รัตนพันธ์" width="150" height="150" style="display:block; width:150px; height:150px; object-fit:cover; border-radius:50%;">
+          <button class="profile-trigger" type="button" aria-label="ดูรูปโปรไฟล์ขนาดใหญ่" aria-controls="profile-modal">
+            <img class="profile-photo" src="Anon.jpg" alt="รูปโปรไฟล์ของนายอานนท์ รัตนพันธ์" width="150" height="150">
+          </button>
         </div>
         <div class="hero-card-name">
           <strong>Anon Ratnapan</strong>
@@ -370,6 +372,14 @@
       season.rat28@outlook.co.th <i data-lucide="arrow-up-right"></i>
     </a>
   </footer>
+
+  <div class="profile-modal" id="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title" hidden>
+    <button class="profile-modal-close" type="button" aria-label="ปิดรูปโปรไฟล์">&times;</button>
+    <div class="profile-modal-content">
+      <img src="Anon.jpg" alt="รูปโปรไฟล์ของนายอานนท์ รัตนพันธ์" loading="lazy">
+      <p id="profile-modal-title">Anon Ratnapan</p>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
