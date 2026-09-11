@@ -1,3 +1,8 @@
+/* Profile image polish */
+.profile-photo{display:block;width:150px;height:150px;object-fit:cover;border:4px solid #fff;border-radius:50%;box-shadow:0 0 0 8px #eff6ff,0 16px 30px rgba(37,99,235,.16)}
+.monogram{display:grid;place-items:center;width:150px;height:150px;margin:54px auto 30px;border-radius:50%;overflow:hidden;background:#eff6ff}
+.monogram img{max-width:100%;height:auto}
+@media(max-width:520px){.profile-photo,.monogram{width:132px;height:132px}.monogram{margin-top:42px}}
 /* Professional experience cards */
 .experience-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-left:0}
 .experience-cards:before{display:none}
