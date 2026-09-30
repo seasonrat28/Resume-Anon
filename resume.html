@@ -310,12 +310,30 @@
 
     /* ตั้งค่าโหมดสำหรับปริ้นโดยเฉพาะ */
     @media print {
-      @page { size: A4 portrait; margin: 1cm; }
-      html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      @page { size: A4 portrait; margin: 8mm; }
+      html, body { 
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact; 
+        font-size: 8.5pt; 
+      }
       .container { padding: 0; width: 100%; max-width: 100%; }
-      .profile-box { background: #fff; border-left: 2px solid #000; }
+      .profile-box { background: #fff; border-left: 2px solid #000; padding: 6px 10px; margin-bottom: 8px;}
       .no-print { display: none !important; }
-      .job-item, .resume-highlights, .competency-strip { break-inside: avoid; page-break-inside: avoid; }
+      .job-item, .competency-strip { break-inside: avoid; page-break-inside: avoid; margin-bottom: 6px;}
+      .resume-highlights { 
+        display: grid !important; 
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 8px !important; 
+        break-inside: avoid; 
+        page-break-inside: avoid; 
+        margin-bottom: 6px;
+      }
+      .section-title { font-size: 10pt; margin-top: 8px; margin-bottom: 6px; }
+      .header { padding-bottom: 8px; margin-bottom: 8px; }
+      .header-info h1 { font-size: 14pt; margin-bottom: 2px; }
+      .highlight-card { padding: 6px 8px; }
+      .highlight-card strong { font-size: 12pt; }
+      .avatar { width: 75px; height: 75px; }
     }
   </style>
 </head>
