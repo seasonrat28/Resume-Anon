@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Arnon Rattanaphan
 
-### IT Support Specialist
+### IT Infrastructure & Helpdesk Support Specialist
 
 Supporting Enterprise & Healthcare IT Infrastructure
 
@@ -14,26 +14,33 @@ Supporting Enterprise & Healthcare IT Infrastructure
 
 📍 Bangkok, Thailand
 
+**[🔗 View Interactive Portfolio](https://seasonrat28.github.io/Resume-Anon/)** | **[📄 View Print-Ready Resume](https://seasonrat28.github.io/Resume-Anon/resume.html)**
+
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 About This Repository
 
-I am an IT Support Specialist with experience supporting enterprise and healthcare environments.
+This repository contains my personal portfolio and resume, designed as a modern, responsive web application. It is split into two main versions:
+
+- **Interactive Portfolio (`index.html`)**: A fully responsive, modern web portfolio featuring animations, modals, and a clean UI tailored for digital viewing.
+- **Print-ready Resume (`resume.html`)**: A streamlined version optimized specifically for A4 printing and PDF export using `@media print` CSS rules.
+
+## 👨‍💼 About Me
+
+I am an **IT Infrastructure & Helpdesk Support Specialist** with experience supporting enterprise and healthcare environments. My expertise lies in resolving complex technical issues quickly and ensuring seamless operations under SLA agreements.
 
 My daily responsibilities include:
 
-- IT Support
-- Printer Infrastructure
-- Windows Administration
-- Active Directory
-- Hardware & Software Troubleshooting
-- Network Troubleshooting
-- Preventive Maintenance
-- Vendor Coordination
+- **IT Support & Helpdesk**: Providing Level 1 & 2 support for 250+ users.
+- **Printer Infrastructure**: Managing 50+ network printers (Fuji Apeos, Fuji Xerox).
+- **Windows Administration**: Active Directory, Windows Server, Group Policy.
+- **Networking**: TCP/IP, DNS, DHCP, IP Management.
+- **Remote Troubleshooting**: TeamViewer, AnyDesk, UltraViewer, TightVNC Viewer.
+- **Preventive Maintenance & Vendor Coordination**
 
-I enjoy solving technical problems and continuously improving my IT skills.
+I enjoy solving technical problems, automating repetitive tasks, and continuously improving my IT skills.
 
 ---
 
@@ -41,62 +48,44 @@ I enjoy solving technical problems and continuously improving my IT skills.
 
 | Category | Skills |
 |-----------|--------|
-| Operating Systems | Windows 10, Windows 11, Windows Server, Linux |
-| Networking | TCP/IP, DNS, DHCP, IP Configuration, Network Printer |
-| IT Support | Active Directory, Troubleshooting, Preventive Maintenance |
-| Remote Support | TeamViewer, AnyDesk, UltraViewer |
-| Programming | JavaScript, TypeScript, Python, C#, C++ |
-| Tools | Git, GitHub, Visual Studio Code |
+| **Operating Systems & Infrastructure** | Windows 10/11, Windows Server, Linux, Active Directory |
+| **Networking & Security** | TCP/IP, DNS, DHCP, IP Management, Cisco Cybersecurity Fundamentals |
+| **Hardware Expertise** | Enterprise Hardware Configuration, Multifunction Printer Specialist (Fuji Apeos, Fuji Xerox) |
+| **Tools & Operations** | TeamViewer, AnyDesk, UltraViewer, TightVNC Viewer, Git, GitHub, VS Code, SLA-Driven Support, StarCat 11 Enterprise Console |
+| **Programming & Automation** | JavaScript, TypeScript, Node.js, Python, C#, C++, SQL |
+| **Soft Skills** | Problem Solving, Service Mind, Vendor Coordination, Fast Learner, Team Collaboration |
 
 ---
 
-## 💼 Experience
+## 💼 Professional Experience
 
-### IT Support Printer
-
+### IT SUPPORT (PRINTER & HELPDESK)
 **Wilcon Distribution Co., Ltd.**
+- Managed helpdesk ticketing and user support (SLA-driven) in a healthcare/hospital environment.
+- Installed, configured, and maintained network printers and enterprise hardware.
+- Performed preventive maintenance and troubleshooting for hardware/software issues.
+- Coordinated with external vendors to resolve critical infrastructure problems.
 
-- Support hospital printer infrastructure
-- Install and configure network printers
-- Perform preventive maintenance
-- Troubleshoot hardware and software issues
-- Coordinate with vendors
-
-### On-site IT Support
-
+### ON-SITE IT SUPPORT
 **Thai Meidensha Co., Ltd.**
-
-- IT Support
-- Network Setup
-- Printer Installation
-- CCTV Installation
-- Hardware Maintenance
+- Setup and managed network infrastructure.
+- Installed printers, CCTV systems, and workstations.
+- Handled daily hardware maintenance and basic IT support.
 
 ---
 
-## 📚 Currently Learning
+## 🎓 Certificates
 
-- Windows Server
-- Active Directory
-- PowerShell
-- Docker
-- Linux Administration
-
----
-
-## 🎯 Career Goal
-
-To grow as an IT Support and System Administrator while continuously improving my skills in Windows Server, Networking, and Infrastructure.
+- **Pathway AI Buddy - AI Literacy**
+- **Cyber Security 101 (BorntoDev Academy)**
+- **Cybersecurity Fundamentals (Cisco Networking Academy)**
+- **Networking Basics (Cisco Networking Academy)**
+- **Operating Systems Basics (Cisco Networking Academy)**
 
 ---
 
-## 🌐 Portfolio
+## 📫 Contact & Links
 
-- Website: https://seasonrat28.github.io/Resume-Anon/
-- GitHub: https://github.com/seasonrat28
-
----
-
-## 📫 Contact
-
-📧 season.rat@gmail.com
+- **Email**: season.rat28@gmail.com | season.rat28@outlook.co.th
+- **LinkedIn**: [Arnon Rattanaphan](https://www.linkedin.com/in/arnon-rattanaphan-529a14440)
+- **Portfolio**: [https://seasonrat28.github.io/Resume-Anon/](https://seasonrat28.github.io/Resume-Anon/)
