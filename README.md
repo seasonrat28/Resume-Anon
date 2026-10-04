@@ -131,6 +131,7 @@ To build a long-term career as an **IT Support** and **System Administrator**, c
 
 ---
 
+<!-- 
 # 📈 Activity Graph
 
 <p align="center">
@@ -138,6 +139,7 @@ To build a long-term career as an **IT Support** and **System Administrator**, c
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=seasonrat28&theme=github-compact&hide_border=true"/>
 
 </p>
+-->
 
 ---
 
