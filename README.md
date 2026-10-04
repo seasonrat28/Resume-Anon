@@ -1,14 +1,14 @@
 <div align="center">
 
-# 👋 Hi, I'm Anon Ratnapan
+# 👋 Hi, I'm Arnon Rattanaphan
 
-### IT Support Specialist | Healthcare IT | Infrastructure
+### IT Infrastructure & Helpdesk Support Specialist
 
 <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=24&pause=1200&color=0078D7&center=true&vCenter=true&width=650&lines=IT+Support+Specialist;Healthcare+IT+Support;Windows+%7C+Networking+%7C+Infrastructure;Always+Learning+New+Technologies" />
 
 <br>
 
-[![Skills](https://skillicons.dev/icons?i=windows,linux,git,github,vscode,html,css,js,ts,python,cpp,cs)](https://skillicons.dev)
+[![Skills](https://skillicons.dev/icons?i=windows,linux,git,github,vscode,html,css,js,ts,python,cpp,cs,nodejs)](https://skillicons.dev)
 
 <br><br>
 
@@ -18,52 +18,41 @@
 
 ---
 
-# 👨💻 About Me
+# 👨‍💻 About Me
 
-I'm an **IT Support Specialist** with experience supporting enterprise and healthcare environments.
+I am an **IT Infrastructure & Helpdesk Support Specialist** with experience supporting enterprise and healthcare environments. My expertise lies in resolving complex technical issues quickly and ensuring seamless operations under SLA agreements.
 
-My work focuses on delivering reliable IT services, troubleshooting technical issues, supporting end users, and maintaining IT infrastructure.
+My daily responsibilities include providing Level 1 & 2 support for 250+ users, managing 50+ network printers (Fuji Apeos, Fuji Xerox), Windows Administration (Active Directory), Networking, and Remote Troubleshooting.
 
-I enjoy learning new technologies and continuously improving my skills in **Windows Server, Networking, Active Directory, and Infrastructure**.
+I enjoy solving technical problems, automating repetitive tasks, and continuously improving my IT skills.
 
 ---
 
 # 💼 Professional Experience
 
 ## 🏥 Wilcon Distribution Co., Ltd.
-
-**IT Support Printer (On-site at Paolo Kaset Hospital)**
-
-- Install and configure network printers
-- Troubleshoot printer hardware and software
-- Perform preventive maintenance
-- Support hospital users
-- Coordinate with vendors
-- Manage printer inventory
+**IT Support (Printer & Helpdesk)** | *On-site at Paolo Kaset Hospital*
+- Managed helpdesk ticketing and user support (SLA-driven) in a healthcare environment.
+- Installed, configured, and maintained network printers and enterprise hardware.
+- Performed preventive maintenance and troubleshooting for hardware/software issues.
+- Coordinated with external vendors to resolve critical infrastructure problems.
+- **Key Achievements**: Maintained >95% SLA compliance and managed network configurations for 50+ enterprise printers, reducing IP conflicts.
 
 ---
 
 ## 🏭 Thai Meidensha Co., Ltd.
-
 **On-site IT Support**
-
-- IT Support
-- Hardware & Software Installation
-- Network Setup
-- Printer Installation
-- CCTV Installation
-- User Support
+- Managed IT infrastructure setup for construction site offices.
+- Installed and configured networks, printers, plotters, and CCTV systems.
+- Handled daily hardware maintenance and provided IT support to engineers.
+- **Key Achievements**: Successfully deployed site office IT infrastructure (network, CCTV, printers) on schedule.
 
 ---
 
 ## 🏢 PTT Gas Separation Plant
-
 **IT Support Intern**
-
-- Computer Support
-- Software Installation
-- Network Support
-- User Assistance
+- Supported basic computer, server, and network operations in a High-Security Site.
+- Acted as a Helpdesk to provide technical support for hardware and software issues.
 
 ---
 
@@ -71,12 +60,22 @@ I enjoy learning new technologies and continuously improving my skills in **Wind
 
 | Category | Skills |
 |-----------|--------|
-| Operating Systems | Windows 10, Windows 11, Linux |
-| Networking | TCP/IP, DNS, DHCP, IP Configuration |
-| IT Support | Hardware, Software, Printer, Troubleshooting |
-| Remote Support | TeamViewer, AnyDesk, UltraViewer |
-| Programming | JavaScript, TypeScript, Python, C#, C++ |
-| Tools | Git, GitHub, VS Code |
+| **Operating Systems & Infrastructure** | Windows 10/11, Windows Server, Linux, Active Directory |
+| **Networking & Security** | TCP/IP, DNS, DHCP, IP Management, Cisco Cybersecurity Fundamentals |
+| **Hardware Expertise** | Enterprise Hardware Configuration, Multifunction Printer Specialist (Fuji Apeos, Fuji Xerox) |
+| **Tools & Operations** | TeamViewer, AnyDesk, UltraViewer, TightVNC Viewer, Git, GitHub, VS Code, SLA-Driven Support, StarCat 11 Enterprise Console |
+| **Programming & Automation** | JavaScript, TypeScript, Node.js, Python, C#, C++, SQL |
+| **Soft Skills & Languages** | Problem Solving, Service Mind, Vendor Coordination, Fast Learner, Team Collaboration, Thai (Native), English (Technical) |
+
+---
+
+# 🎓 Certificates
+
+- **Pathway AI Buddy - AI Literacy**
+- **Cyber Security 101** (BorntoDev Academy)
+- **Cybersecurity Fundamentals** (Cisco Networking Academy)
+- **Networking Basics** (Cisco Networking Academy)
+- **Operating Systems Basics** (Cisco Networking Academy)
 
 ---
 
@@ -84,8 +83,8 @@ I enjoy learning new technologies and continuously improving my skills in **Wind
 
 | Project | Description |
 |----------|-------------|
-| 🌐 Resume Website | Personal portfolio built with HTML, CSS and JavaScript |
-| 📄 Resume | ATS-friendly resume for IT Support positions |
+| 🌐 [Interactive Portfolio](https://seasonrat28.github.io/Resume-Anon/) | Modern web portfolio featuring animations, modals, and a clean UI |
+| 📄 [Print-Ready Resume](https://seasonrat28.github.io/Resume-Anon/resume.html) | ATS-friendly, A4 optimized resume for IT Support positions |
 | 🖨 Printer Management | Notes and troubleshooting for printer infrastructure |
 | 🪟 Windows Server Lab | Learning Windows Server *(Coming Soon)* |
 | 👥 Active Directory Lab | Active Directory practice *(Coming Soon)* |
@@ -146,12 +145,16 @@ To build a long-term career as an **IT Support** and **System Administrator**, c
 
 <p align="center">
 
-<a href="mailto:season.rat@gmail.com">
+<a href="mailto:season.rat28@gmail.com,season.rat28@outlook.co.th">
 <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/seasonrat28">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/arnon-rattanaphan-529a14440">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="https://seasonrat28.github.io/Resume-Anon/">
