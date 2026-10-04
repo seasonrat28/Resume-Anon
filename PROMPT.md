@@ -74,7 +74,7 @@ Photo
 
 Name
 
-Anon Ratnapan
+Arnon Rattanaphan
 
 IT Support Specialist
 
