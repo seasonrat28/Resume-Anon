@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - IT Support Print</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Noto Sans Thai', 'Inter', 'Leelawadee UI', Tahoma, Arial, sans-serif;
       color: #111;
-      line-height: 1.3;
-      font-size: 9.5pt;
+      line-height: 1.25;
+      font-size: 8.5pt;
       background: #fff;
       -webkit-text-size-adjust: 100%;
       text-size-adjust: 100%;
+    }
+
+    @page {
+      margin: 8mm;
+      /* Reduced print margin */
     }
 
     .container {
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 10px 15px;
     }
 
     /* ส่วนหัวโปรไฟล์: รูปภาพ ชื่อ และข้อมูลติดต่อ */
     .header {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       border-bottom: 2px solid #222;
-      padding-bottom: 12px;
-      margin-bottom: 12px;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .avatar {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
       object-fit: cover;
       border: 1px solid #ccc;
     }
 
     .header-info h1 {
-      font-size: 16pt;
+      font-size: 14pt;
       text-transform: uppercase;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .header-info p {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #333;
     }
 
     /* กล่องข้อความสรุปโปรไฟล์ */
     .profile-box {
       background: #f8f9fa;
-      padding: 8px 12px;
+      padding: 6px 10px;
       border-left: 3px solid #222;
-      margin-bottom: 12px;
-      font-size: 9pt;
+      margin-bottom: 10px;
+      font-size: 8.5pt;
     }
 
     .resume-highlights {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .highlight-card {
-      padding: 8px 10px;
+      padding: 6px 8px;
       border: 1px solid #d9dee5;
       border-radius: 5px;
       background: #fff;
@@ -82,21 +95,21 @@
     .highlight-card strong {
       display: block;
       color: #2563eb;
-      font-size: 14pt;
+      font-size: 12pt;
       line-height: 1;
     }
 
     .highlight-card span {
       display: block;
-      margin-top: 3px;
+      margin-top: 2px;
       color: #444;
-      font-size: 8pt;
+      font-size: 7.5pt;
     }
 
     .competency-strip {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       color: #333;
-      font-size: 8.5pt;
+      font-size: 8pt;
     }
 
     .competency-strip strong {
@@ -105,255 +118,319 @@
 
     /* หัวข้อหลัก */
     .section-title {
-      font-size: 10.5pt;
+      font-size: 10pt;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 1px solid #444;
       padding-bottom: 2px;
-      margin-top: 10px;
-      margin-bottom: 8px;
+      margin-top: 8px;
+      margin-bottom: 6px;
     }
 
     /* รายละเอียดประสบการณ์ทำงาน */
-    .job-item { 
-      margin-bottom: 10px; 
-      page-break-inside: avoid; 
+    .job-item {
+      margin-bottom: 8px;
+      page-break-inside: avoid;
     }
-    
-    .job-header { 
-      display: flex; 
-      justify-content: space-between; 
-      font-weight: bold; 
-      font-size: 9.5pt; 
+
+    .job-item img {
+      display: none !important;
     }
-    
-    .company { 
-      font-style: italic; 
-      color: #333; 
-      font-size: 8.5pt; 
-      margin-bottom: 3px; 
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 9pt;
     }
-    
-    ul { margin-left: 16px; }
-    li { margin-bottom: 2px; }
+
+    .company {
+      font-style: italic;
+      color: #333;
+      font-size: 8pt;
+      margin-bottom: 2px;
+    }
+
+    ul {
+      margin-left: 16px;
+      margin-top: 2px;
+    }
+
+    li {
+      margin-bottom: 1px;
+    }
 
     /* ==========================
    Floating Print Button
 ========================== */
 
-.print-fab{
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 999;
+    .print-fab {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      z-index: 999;
 
-    display:flex;
-    align-items:center;
-    gap:10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
-    padding:14px 24px;
+      padding: 14px 24px;
 
-    background:linear-gradient(135deg,#111,#333);
-    color:#fff;
+      background: linear-gradient(135deg, #111, #333);
+      color: #fff;
 
-    border:none;
-    border-radius:999px;
+      border: none;
+      border-radius: 999px;
 
-    font-size:15px;
-    font-weight:bold;
+      font-size: 15px;
+      font-weight: bold;
 
-    cursor:pointer;
+      cursor: pointer;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
 
-    transition:all .25s ease;
-}
-
-.print-fab:hover{
-    transform:translateY(-3px);
-    box-shadow:0 18px 40px rgba(0,0,0,.35);
-}
-
-.print-fab:active{
-    transform:scale(.97);
-}
-
-.print-fab svg{
-    width:20px;
-    height:20px;
-}
-
-/* กลุ่มปุ่มมุมขวาล่าง */
-.fab-group{
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 999;
-
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-/* ปุ่มทั่วไป */
-.fab-btn{
-    display:flex;
-    align-items:center;
-    gap:10px;
-
-    padding:14px 24px;
-
-    border:none;
-    border-radius:999px;
-
-    color:#fff;
-    font-size:15px;
-    font-weight:bold;
-
-    cursor:pointer;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
-
-    transition:all .25s ease;
-}
-
-.fab-btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 18px 40px rgba(0,0,0,.35);
-}
-
-.fab-btn:active{
-    transform:scale(.97);
-}
-
-.fab-btn svg{
-    width:20px;
-    height:20px;
-}
-
-/* สีปุ่ม */
-.home-btn{
-    background:linear-gradient(135deg,#2563eb,#1d4ed8);
-}
-
-.print-btn{
-    background:linear-gradient(135deg,#111,#333);
-}
-
-/* มือถือ */
-@media(max-width:768px){
-
-  .container{
-    padding:15px;
-  }
-
-  .header{
-    align-items:flex-start;
-    gap:14px;
-  }
-
-  .avatar{
-    width:72px;
-    height:72px;
-    flex:none;
-  }
-
-  .header-info h1{
-    font-size:14pt;
-  }
-
-  .header-info p{
-    overflow-wrap:anywhere;
-  }
-
-  .job-header{
-    flex-wrap:wrap;
-    gap:2px 12px;
-  }
-
-    .fab-group{
-        left:15px;
-        right:15px;
-        bottom:15px;
+      transition: all .25s ease;
     }
 
-  .resume-highlights{
-    grid-template-columns:1fr;
-  }
-
-    .fab-btn{
-        justify-content:center;
-        width:100%;
+    .print-fab:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
     }
 
-}
-
-/* ซ่อนเวลาพิมพ์ */
-@media print{
-    .fab-group{
-        display:none !important;
-    }
-}
-
-@media(max-width:768px){
-
-    .print-fab{
-        left:15px;
-        right:15px;
-        bottom:15px;
-
-        justify-content:center;
+    .print-fab:active {
+      transform: scale(.97);
     }
 
-}
+    .print-fab svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* กลุ่มปุ่มมุมขวาล่าง */
+    .fab-group {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      z-index: 999;
+
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* ปุ่มทั่วไป */
+    .fab-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      padding: 14px 24px;
+
+      border: none;
+      border-radius: 999px;
+
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+
+      transition: all .25s ease;
+    }
+
+    .fab-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+    }
+
+    .fab-btn:active {
+      transform: scale(.97);
+    }
+
+    .fab-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* สีปุ่ม */
+    .home-btn {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    }
+
+    .print-btn {
+      background: linear-gradient(135deg, #111, #333);
+    }
+
+    /* มือถือ */
+    @media(max-width:768px) {
+
+      .container {
+        padding: 15px;
+      }
+
+      .header {
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .avatar {
+        width: 72px;
+        height: 72px;
+        flex: none;
+      }
+
+      .header-info h1 {
+        font-size: 14pt;
+      }
+
+      .header-info p {
+        overflow-wrap: anywhere;
+      }
+
+      .job-header {
+        flex-wrap: wrap;
+        gap: 2px 12px;
+      }
+
+      .fab-group {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+      }
+
+      .resume-highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .fab-btn {
+        justify-content: center;
+        width: 100%;
+      }
+
+    }
+
+    /* ซ่อนเวลาพิมพ์ */
+    @media print {
+      .fab-group {
+        display: none !important;
+      }
+    }
+
+    @media(max-width:768px) {
+
+      .print-fab {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        justify-content: center;
+      }
+
+    }
 
 
     /* ตั้งค่าโหมดสำหรับปริ้นโดยเฉพาะ */
     @media print {
-      @page { size: A4 portrait; margin: 8mm; }
-      html, body { 
-        -webkit-print-color-adjust: exact; 
-        print-color-adjust: exact; 
-        font-size: 8.5pt; 
+      @page {
+        size: A4 portrait;
+        margin: 8mm;
       }
-      .container { padding: 0; width: 100%; max-width: 100%; }
-      .profile-box { background: #fff; border-left: 2px solid #000; padding: 6px 10px; margin-bottom: 8px;}
-      .no-print { display: none !important; }
-      .job-item, .competency-strip { break-inside: avoid; page-break-inside: avoid; margin-bottom: 6px;}
-      .resume-highlights { 
-        display: grid !important; 
-        grid-template-columns: repeat(3, 1fr) !important; 
-        gap: 8px !important; 
-        break-inside: avoid; 
-        page-break-inside: avoid; 
+
+      html,
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 8.5pt;
+      }
+
+      .container {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .profile-box {
+        background: #fff;
+        border-left: 2px solid #000;
+        padding: 6px 10px;
+        margin-bottom: 8px;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .job-item,
+      .competency-strip {
+        break-inside: avoid;
+        page-break-inside: avoid;
         margin-bottom: 6px;
       }
-      .section-title { font-size: 10pt; margin-top: 8px; margin-bottom: 6px; }
-      .header { padding-bottom: 8px; margin-bottom: 8px; }
-      .header-info h1 { font-size: 14pt; margin-bottom: 2px; }
-      .highlight-card { padding: 6px 8px; }
-      .highlight-card strong { font-size: 12pt; }
-      .avatar { width: 75px; height: 75px; }
+
+      .resume-highlights {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 8px !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 6px;
+      }
+
+      .section-title {
+        font-size: 10pt;
+        margin-top: 8px;
+        margin-bottom: 6px;
+      }
+
+      .header {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+      }
+
+      .header-info h1 {
+        font-size: 14pt;
+        margin-bottom: 2px;
+      }
+
+      .highlight-card {
+        padding: 6px 8px;
+      }
+
+      .highlight-card strong {
+        font-size: 12pt;
+      }
+
+      .avatar {
+        width: 75px;
+        height: 75px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
-    
+
     <!-- ส่วนหัว: รูป ชื่อ และข้อมูลติดต่อ -->
     <div class="header">
       <img src="Anon.jpg" alt="Profile" class="avatar">
       <div class="header-info">
         <h1>อานนท์ รัตนพันธ์</h1>
         <p><strong>IT Infrastructure &amp; Helpdesk Support Specialist (Healthcare IT)</strong></p>
-        <p>โทร: 083-428-1628 | อีเมล: season.rat28@gmail.com | LinkedIn: linkedin.com/in/arnon-rattanaphan-529a14440 | กรุงเทพมหานคร</p>
+        <p>โทร: 083-428-1628 | อีเมล: season.rat28@gmail.com | LinkedIn: linkedin.com/in/arnon-rattanaphan-529a14440 |
+          กรุงเทพมหานคร</p>
       </div>
     </div>
 
     <!-- สรุปโปรไฟล์ -->
     <div class="profile-box">
-      มีความเชี่ยวชาญด้าน IT Support & Helpdesk (Healthcare IT) มีทักษะและความเชี่ยวชาญในการรับแจ้งเคส บริหารจัดการระบบ Helpdesk ให้บริการช่วยเหลือผู้ใช้งาน (User Support) ตลอดจนการติดตั้ง ดูแลรักษา และแก้ไขปัญหาเครื่องพิมพ์ประเภทต่างๆ ทั้งภายในสำนักงานและระบบเครือข่ายโรงพยาบาลขนาดใหญ่ เพื่อให้ระบบงานไอทีและงานพิมพ์สำคัญทำงานได้อย่างรวดเร็ว ถูกต้อง และราบรื่น ภายใต้เงื่อนไขข้อตกลงการให้บริการ (SLA)
+      มีความเชี่ยวชาญด้าน IT Support & Helpdesk (Healthcare IT) มีทักษะและความเชี่ยวชาญในการรับแจ้งเคส บริหารจัดการระบบ
+      Helpdesk ให้บริการช่วยเหลือผู้ใช้งาน (User Support) ตลอดจนการติดตั้ง ดูแลรักษา
+      และแก้ไขปัญหาเครื่องพิมพ์ประเภทต่างๆ ทั้งภายในสำนักงานและระบบเครือข่ายโรงพยาบาลขนาดใหญ่
+      เพื่อให้ระบบงานไอทีและงานพิมพ์สำคัญทำงานได้อย่างรวดเร็ว ถูกต้อง และราบรื่น ภายใต้เงื่อนไขข้อตกลงการให้บริการ (SLA)
     </div>
 
     <div class="resume-highlights" aria-label="Career highlights">
@@ -364,28 +441,45 @@
 
     <p class="competency-strip">
       <strong>Core Technical Stack:</strong>
-      Windows 10/11 · Windows Server · Linux · Active Directory · TCP/IP · IP Management · DNS · DHCP · StarCat 11 Enterprise Console · Fuji Apeos · Fuji Xerox · TightVNC Viewer · SLA-Driven Support<br>
-      <strong>Soft Skills &amp; Languages:</strong> Problem Solving · Service Mind · Vendor Coordination · Fast Learner · Team Collaboration · Thai (Native) · English (Technical)
+      Windows 10/11 · Windows Server · Linux · Active Directory · TCP/IP · IP Management · DNS · DHCP · StarCat 11
+      Enterprise Console · Fuji Apeos · Fuji Xerox · TightVNC Viewer · SLA-Driven Support<br>
+      <strong>Soft Skills &amp; Languages:</strong> Problem Solving · Service Mind · Vendor Coordination · Fast Learner
+      · Team Collaboration · Thai (Native) · English (Technical)
     </p>
 
     <!-- ประสบการณ์ทำงาน -->
     <div class="section-title">Professional Experience</div>
 
     <div class="job-item">
-      <div class="job-header">
-        <span>IT SUPPORT (PRINTER & HELPDESK)</span>
-        <span>ม.ค. 2569 – ปัจจุบัน</span>
+      <div style="display: flex; gap: 10px; align-items: flex-start;">
+        <img src="assets/logos/wilcon.png"
+          style="width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #eee;"
+          onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=W&background=F3F4F6&color=4B5563&size=128'">
+        <div style="flex: 1;">
+          <div class="job-header">
+            <span>IT SUPPORT (PRINTER & HELPDESK)</span>
+            <span>ม.ค. 2569 – ปัจจุบัน</span>
+          </div>
+          <div class="company">Wilcon Distribution Co., Ltd. | On-site @ โรงพยาบาลเปาโลเกษตร</div>
+        </div>
       </div>
-      <div class="company">Wilcon Distribution Co., Ltd. | On-site @ โรงพยาบาลเปาโลเกษตร</div>
       <ul>
-        <li>ปฏิบัติหน้าที่ IT Helpdesk และ On-site Support รับแจ้ง บันทึก จัดลำดับความสำคัญ ติดตาม และประสานงาน Incident ให้แก่บุคลากรทางการแพทย์และเจ้าหน้าที่ เพื่อให้การแก้ไขปัญหาเป็นไปตาม SLA-Driven Operations</li>
-        <li>ให้บริการ Remote Support และ On-site เพื่อแก้ไขปัญหาด้านฮาร์ดแวร์ ซอฟต์แวร์ ระบบปฏิบัติการ (Windows 10/11) และการใช้งานทั่วไป แก่ End-user อย่างรวดเร็วและตรงจุด</li>
-        <li>บริหารจัดการบัญชีผู้ใช้งานผ่าน Active Directory (AD) เช่น การตั้งค่า User, Reset Password, จัดการ Group Policy เบื้องต้น และกำหนดสิทธิ์การเข้าถึงระบบต่างๆ</li>
-        <li>ติดตั้งระบบปฏิบัติการ จัดเตรียมเครื่องคอมพิวเตอร์ (Deploy/Setup) ตั้งค่าอีเมล และติดตั้งซอฟต์แวร์ที่จำเป็นก่อนส่งมอบให้พนักงานหรือแผนกต่างๆ</li>
-        <li>วิเคราะห์ปัญหาเบื้องต้น แยกแยะอาการที่เกิดซ้ำ และประสานงาน Problem Management เพื่อสนับสนุนการแก้ไขที่ต้นเหตุและลดผลกระทบต่อการปฏิบัติงานของโรงพยาบาล</li>
-        <li>ดูแลระบบเครือข่ายเบื้องต้น (Network Troubleshooting) ตรวจสอบการเชื่อมต่อ LAN/Wi-Fi (TCP/IP, DNS, DHCP) เพื่อให้การทำงานราบรื่นไม่มีสะดุด</li>
-        <li>บริหารจัดการ Printer Fleet และ IP Management ตั้งแต่การจัดสรร กำหนดค่า และตรวจสอบ IP Address ของเครื่องพิมพ์ระดับองค์กร (Fuji Apeos / Xerox) บนเครือข่ายโรงพยาบาล</li>
-        <li>ดำเนินการ Preventive Maintenance (PM) ดูแล IT Asset Management ที่เกี่ยวข้องกับอุปกรณ์เครื่องพิมพ์ พร้อมประสานงานส่งต่อเคสกับทีมช่างเทคนิคภายนอก (Vendor)</li>
+        <li>ปฏิบัติหน้าที่ IT Helpdesk และ On-site Support รับแจ้ง บันทึก จัดลำดับความสำคัญ ติดตาม และประสานงาน Incident
+          ให้แก่บุคลากรทางการแพทย์และเจ้าหน้าที่ เพื่อให้การแก้ไขปัญหาเป็นไปตาม SLA-Driven Operations</li>
+        <li>ให้บริการ Remote Support และ On-site เพื่อแก้ไขปัญหาด้านฮาร์ดแวร์ ซอฟต์แวร์ ระบบปฏิบัติการ (Windows 10/11)
+          และการใช้งานทั่วไป แก่ End-user อย่างรวดเร็วและตรงจุด</li>
+        <li>บริหารจัดการบัญชีผู้ใช้งานผ่าน Active Directory (AD) เช่น การตั้งค่า User, Reset Password, จัดการ Group
+          Policy เบื้องต้น และกำหนดสิทธิ์การเข้าถึงระบบต่างๆ</li>
+        <li>ติดตั้งระบบปฏิบัติการ จัดเตรียมเครื่องคอมพิวเตอร์ (Deploy/Setup) ตั้งค่าอีเมล
+          และติดตั้งซอฟต์แวร์ที่จำเป็นก่อนส่งมอบให้พนักงานหรือแผนกต่างๆ</li>
+        <li>วิเคราะห์ปัญหาเบื้องต้น แยกแยะอาการที่เกิดซ้ำ และประสานงาน Problem Management
+          เพื่อสนับสนุนการแก้ไขที่ต้นเหตุและลดผลกระทบต่อการปฏิบัติงานของโรงพยาบาล</li>
+        <li>ดูแลระบบเครือข่ายเบื้องต้น (Network Troubleshooting) ตรวจสอบการเชื่อมต่อ LAN/Wi-Fi (TCP/IP, DNS, DHCP)
+          เพื่อให้การทำงานราบรื่นไม่มีสะดุด</li>
+        <li>บริหารจัดการ Printer Fleet และ IP Management ตั้งแต่การจัดสรร กำหนดค่า และตรวจสอบ IP Address
+          ของเครื่องพิมพ์ระดับองค์กร (Fuji Apeos / Xerox) บนเครือข่ายโรงพยาบาล</li>
+        <li>ดำเนินการ Preventive Maintenance (PM) ดูแล IT Asset Management ที่เกี่ยวข้องกับอุปกรณ์เครื่องพิมพ์
+          พร้อมประสานงานส่งต่อเคสกับทีมช่างเทคนิคภายนอก (Vendor)</li>
       </ul>
       <div style="font-size: 11px; color: #475569; margin-top: 4px; padding-left: 14px;">
         <strong>Key Achievements:</strong>
@@ -397,11 +491,18 @@
     </div>
 
     <div class="job-item">
-      <div class="job-header">
-        <span>STORE ASSISTANT</span>
-        <span>มิ.ย. 2568 – ธ.ค. 2568</span>
+      <div style="display: flex; gap: 10px; align-items: flex-start;">
+        <img src="assets/logos/mrdiy.png"
+          style="width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #eee;"
+          onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=M&background=F3F4F6&color=4B5563&size=128'">
+        <div style="flex: 1;">
+          <div class="job-header">
+            <span>STORE ASSISTANT</span>
+            <span>มิ.ย. 2568 – ธ.ค. 2568</span>
+          </div>
+          <div class="company">M.R.DIY สาขาที่ 321 โลตัส หลักสี่</div>
+        </div>
       </div>
-      <div class="company">M.R.DIY สาขาที่ 321 โลตัส หลักสี่</div>
       <ul>
         <li>ให้บริการ แนะนำสินค้า และตอบข้อซักถามแก่ลูกค้า พร้อมส่งมอบประสบการณ์บริการที่ประทับใจ</li>
         <li>ใช้งานระบบเครื่องบันทึกเงินสด (POS System) ในการทำรายการชำระเงินและจัดการยอดขายหน้าร้าน</li>
@@ -412,77 +513,100 @@
     </div>
 
     <div class="job-item">
-      <div class="job-header">
-        <span>ON-SITE IT SUPPORT</span>
-        <span>ธ.ค. 2565 – เม.ย. 2568</span>
+      <div style="display: flex; gap: 10px; align-items: flex-start;">
+        <img src="assets/logos/thaimeidensha.png"
+          style="width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #eee;"
+          onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=T&background=F3F4F6&color=4B5563&size=128'">
+        <div style="flex: 1;">
+          <div class="job-header">
+            <span>ON-SITE IT SUPPORT</span>
+            <span>ธ.ค. 2565 – เม.ย. 2568</span>
+          </div>
+          <div class="company">Thai Meidensha Co., Ltd.</div>
+        </div>
       </div>
-      <div class="company">Thai Meidensha Co., Ltd.</div>
       <ul>
-        <li>บริหารจัดการโครงสร้างพื้นฐานด้านไอที (IT Infrastructure) ประจำไซต์งานก่อสร้าง เพื่อให้วิศวกรปฏิบัติงานได้อย่างต่อเนื่อง</li>
+        <li>บริหารจัดการโครงสร้างพื้นฐานด้านไอที (IT Infrastructure) ประจำไซต์งานก่อสร้าง
+          เพื่อให้วิศวกรปฏิบัติงานได้อย่างต่อเนื่อง</li>
         <li>ออกแบบ ติดตั้ง และบำรุงรักษาระบบเครือข่ายอินเทอร์เน็ต (Network Setup) ภายใน Site Office</li>
-        <li>ติดตั้งและตั้งค่าเครื่องพิมพ์/เครื่องพล็อตเตอร์ (Printer / Plotter) รองรับการพิมพ์แบบแปลนวิศวกรรม (Blueprint)</li>
-        <li>ทำหน้าที่ Helpdesk และ IT Support คอยรับแจ้งปัญหา และซ่อมบำรุงฮาร์ดแวร์/ซอฟต์แวร์ของอุปกรณ์ไอทีประจำไซต์งาน</li>
+        <li>ติดตั้งและตั้งค่าเครื่องพิมพ์/เครื่องพล็อตเตอร์ (Printer / Plotter) รองรับการพิมพ์แบบแปลนวิศวกรรม
+          (Blueprint)</li>
+        <li>ทำหน้าที่ Helpdesk และ IT Support คอยรับแจ้งปัญหา และซ่อมบำรุงฮาร์ดแวร์/ซอฟต์แวร์ของอุปกรณ์ไอทีประจำไซต์งาน
+        </li>
         <li>ติดตั้งระบบกล้องวงจรปิด (CCTV) กำหนดค่าเครือข่าย เพื่อการรักษาความปลอดภัยของโครงการก่อสร้าง</li>
       </ul>
       <div style="font-size: 11px; color: #475569; margin-top: 4px; padding-left: 14px;">
         <strong>Key Achievements:</strong>
         <ul style="margin-top: 2px;">
-          <li>ติดตั้งระบบโครงสร้างพื้นฐานด้านไอที (เครือข่าย, กล้องวงจรปิด, เครื่องพิมพ์) สำหรับ Site Office ได้แล้วเสร็จตามกำหนด</li>
+          <li>ติดตั้งระบบโครงสร้างพื้นฐานด้านไอที (เครือข่าย, กล้องวงจรปิด, เครื่องพิมพ์) สำหรับ Site Office
+            ได้แล้วเสร็จตามกำหนด</li>
         </ul>
       </div>
     </div>
 
     <div class="job-item">
-      <div class="job-header">
-        <span>IT SUPPORT INTERN</span>
-        <span>ม.ค. 2562 – ม.ค. 2563</span>
+      <div style="display: flex; gap: 10px; align-items: flex-start;">
+        <img src="assets/logos/ptt.png"
+          style="width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #eee;"
+          onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=P&background=F3F4F6&color=4B5563&size=128'">
+        <div style="flex: 1;">
+          <div class="job-header">
+            <span>IT SUPPORT INTERN</span>
+            <span>ม.ค. 2562 – ม.ค. 2563</span>
+          </div>
+          <div class="company">โรงแยกก๊าซธรรมชาติระยอง PTT Group (นักศึกษาฝึกงาน)</div>
+        </div>
       </div>
-      <div class="company">โรงแยกก๊าซธรรมชาติระยอง PTT Group (นักศึกษาฝึกงาน)</div>
       <ul>
-        <li>สนับสนุนการดูแลระบบคอมพิวเตอร์ เซิร์ฟเวอร์ และระบบเครือข่ายเบื้องต้น ภายในพื้นที่ความปลอดภัยสูง (High-Security Site)</li>
-        <li>ปฏิบัติงานในฐานะ Helpdesk รับแจ้งและให้บริการ Technical Support แก้ไขปัญหาด้านฮาร์ดแวร์และซอฟต์แวร์เบื้องต้นแก่พนักงาน</li>
+        <li>สนับสนุนการดูแลระบบคอมพิวเตอร์ เซิร์ฟเวอร์ และระบบเครือข่ายเบื้องต้น ภายในพื้นที่ความปลอดภัยสูง
+          (High-Security Site)</li>
+        <li>ปฏิบัติงานในฐานะ Helpdesk รับแจ้งและให้บริการ Technical Support
+          แก้ไขปัญหาด้านฮาร์ดแวร์และซอฟต์แวร์เบื้องต้นแก่พนักงาน</li>
         <li>เรียนรู้มาตรฐานการทำงานแบบองค์กรขนาดใหญ่ ในการจัดการระบบ IT ควบคู่กับระบบงานอุตสาหกรรม</li>
         <li>ช่วยติดตั้งโปรแกรมพื้นฐาน จัดเตรียมเครื่องคอมพิวเตอร์ และอุปกรณ์ต่อพ่วงสำหรับผู้ปฏิบัติงาน</li>
       </ul>
     </div>
 
     <!-- ความพร้อมในการเริ่มงาน -->
+
+
     <div class="section-title">Work Commitment & Availability</div>
     <p style="font-size: 8.5pt;">
-      พร้อมเรียนรู้งานเร็วและเริ่มงานได้ทันที พร้อมสนับสนุนการส่งมอบหน้าที่การดูแลระบบเครื่องพิมพ์เดิมอย่างเป็นมืออาชีพ
+      พร้อมเรียนรู้งานเร็วและเริ่มงานได้ทันที พร้อมสนับสนุนการส่งมอบหน้าที่การดูแลระบบเดิมอย่างเป็นมืออาชีพ
     </p>
 
   </div>
 
-<!-- ปุ่มลอยมุมขวาล่าง -->
-<div class="fab-group no-print">
+  <!-- ปุ่มลอยมุมขวาล่าง -->
+  <div class="fab-group no-print">
 
-  <!-- ปุ่มกลับหน้าแรก -->
-  <button class="fab-btn home-btn" type="button" onclick="goHome()">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path d="M3 10.5L12 3l9 7.5"/>
-      <path d="M5 9.75V21h14V9.75"/>
-    </svg>
-    <span>กลับหน้าแรก</span>
-  </button>
+    <!-- ปุ่มกลับหน้าแรก -->
+    <button class="fab-btn home-btn" type="button" onclick="goHome()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M3 10.5L12 3l9 7.5" />
+        <path d="M5 9.75V21h14V9.75" />
+      </svg>
+      <span>กลับหน้าแรก</span>
+    </button>
 
-  <!-- ปุ่มพิมพ์ -->
-  <button class="fab-btn print-btn" type="button" onclick="window.print()">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path d="M6 9V2h12v7"/>
-      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-      <rect x="6" y="14" width="12" height="8"/>
-    </svg>
-    <span>Print Resume</span>
-  </button>
+    <!-- ปุ่มพิมพ์ -->
+    <button class="fab-btn print-btn" type="button" onclick="window.print()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M6 9V2h12v7" />
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+        <rect x="6" y="14" width="12" height="8" />
+      </svg>
+      <span>Print Resume</span>
+    </button>
 
-</div>
+  </div>
 
-<script>
-function goHome() {
-  window.location.href = "index.html";
-}
-</script>
+  <script>
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
 
 </body>
+
 </html>
