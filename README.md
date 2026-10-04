@@ -1,91 +1,171 @@
 <div align="center">
 
-# 👋 Hi, I'm Arnon Rattanaphan
+# 👋 Hi, I'm Anon Ratnapan
 
-### IT Infrastructure & Helpdesk Support Specialist
+### IT Support Specialist | Healthcare IT | Infrastructure
 
-Supporting Enterprise & Healthcare IT Infrastructure
+<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=24&pause=1200&color=0078D7&center=true&vCenter=true&width=650&lines=IT+Support+Specialist;Healthcare+IT+Support;Windows+%7C+Networking+%7C+Infrastructure;Always+Learning+New+Technologies" />
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white)
+<br>
+
+[![Skills](https://skillicons.dev/icons?i=windows,linux,git,github,vscode,html,css,js,ts,python,cpp,cs)](https://skillicons.dev)
+
+<br><br>
 
 📍 Bangkok, Thailand
-
-**[🔗 View Interactive Portfolio](https://seasonrat28.github.io/Resume-Anon/)** | **[📄 View Print-Ready Resume](https://seasonrat28.github.io/Resume-Anon/resume.html)**
 
 </div>
 
 ---
 
-## 👨‍💻 About This Repository
+# 👨💻 About Me
 
-This repository contains my personal portfolio and resume, designed as a modern, responsive web application. It is split into two main versions:
+I'm an **IT Support Specialist** with experience supporting enterprise and healthcare environments.
 
-- **Interactive Portfolio (`index.html`)**: A fully responsive, modern web portfolio featuring animations, modals, and a clean UI tailored for digital viewing.
-- **Print-ready Resume (`resume.html`)**: A streamlined version optimized specifically for A4 printing and PDF export using `@media print` CSS rules.
+My work focuses on delivering reliable IT services, troubleshooting technical issues, supporting end users, and maintaining IT infrastructure.
 
-## 👨‍💼 About Me
-
-I am an **IT Infrastructure & Helpdesk Support Specialist** with experience supporting enterprise and healthcare environments. My expertise lies in resolving complex technical issues quickly and ensuring seamless operations under SLA agreements.
-
-My daily responsibilities include:
-
-- **IT Support & Helpdesk**: Providing Level 1 & 2 support for 250+ users.
-- **Printer Infrastructure**: Managing 50+ network printers (Fuji Apeos, Fuji Xerox).
-- **Windows Administration**: Active Directory, Windows Server, Group Policy.
-- **Networking**: TCP/IP, DNS, DHCP, IP Management.
-- **Remote Troubleshooting**: TeamViewer, AnyDesk, UltraViewer, TightVNC Viewer.
-- **Preventive Maintenance & Vendor Coordination**
-
-I enjoy solving technical problems, automating repetitive tasks, and continuously improving my IT skills.
+I enjoy learning new technologies and continuously improving my skills in **Windows Server, Networking, Active Directory, and Infrastructure**.
 
 ---
 
-## 🛠 Technical Skills
+# 💼 Professional Experience
+
+## 🏥 Wilcon Distribution Co., Ltd.
+
+**IT Support Printer (On-site at Paolo Kaset Hospital)**
+
+- Install and configure network printers
+- Troubleshoot printer hardware and software
+- Perform preventive maintenance
+- Support hospital users
+- Coordinate with vendors
+- Manage printer inventory
+
+---
+
+## 🏭 Thai Meidensha Co., Ltd.
+
+**On-site IT Support**
+
+- IT Support
+- Hardware & Software Installation
+- Network Setup
+- Printer Installation
+- CCTV Installation
+- User Support
+
+---
+
+## 🏢 PTT Gas Separation Plant
+
+**IT Support Intern**
+
+- Computer Support
+- Software Installation
+- Network Support
+- User Assistance
+
+---
+
+# 🛠 Technical Skills
 
 | Category | Skills |
 |-----------|--------|
-| **Operating Systems & Infrastructure** | Windows 10/11, Windows Server, Linux, Active Directory |
-| **Networking & Security** | TCP/IP, DNS, DHCP, IP Management, Cisco Cybersecurity Fundamentals |
-| **Hardware Expertise** | Enterprise Hardware Configuration, Multifunction Printer Specialist (Fuji Apeos, Fuji Xerox) |
-| **Tools & Operations** | TeamViewer, AnyDesk, UltraViewer, TightVNC Viewer, Git, GitHub, VS Code, SLA-Driven Support, StarCat 11 Enterprise Console |
-| **Programming & Automation** | JavaScript, TypeScript, Node.js, Python, C#, C++, SQL |
-| **Soft Skills** | Problem Solving, Service Mind, Vendor Coordination, Fast Learner, Team Collaboration |
+| Operating Systems | Windows 10, Windows 11, Linux |
+| Networking | TCP/IP, DNS, DHCP, IP Configuration |
+| IT Support | Hardware, Software, Printer, Troubleshooting |
+| Remote Support | TeamViewer, AnyDesk, UltraViewer |
+| Programming | JavaScript, TypeScript, Python, C#, C++ |
+| Tools | Git, GitHub, VS Code |
 
 ---
 
-## 💼 Professional Experience
+# 🚀 Featured Projects
 
-### IT SUPPORT (PRINTER & HELPDESK)
-**Wilcon Distribution Co., Ltd.**
-- Managed helpdesk ticketing and user support (SLA-driven) in a healthcare/hospital environment.
-- Installed, configured, and maintained network printers and enterprise hardware.
-- Performed preventive maintenance and troubleshooting for hardware/software issues.
-- Coordinated with external vendors to resolve critical infrastructure problems.
-
-### ON-SITE IT SUPPORT
-**Thai Meidensha Co., Ltd.**
-- Setup and managed network infrastructure.
-- Installed printers, CCTV systems, and workstations.
-- Handled daily hardware maintenance and basic IT support.
+| Project | Description |
+|----------|-------------|
+| 🌐 Resume Website | Personal portfolio built with HTML, CSS and JavaScript |
+| 📄 Resume | ATS-friendly resume for IT Support positions |
+| 🖨 Printer Management | Notes and troubleshooting for printer infrastructure |
+| 🪟 Windows Server Lab | Learning Windows Server *(Coming Soon)* |
+| 👥 Active Directory Lab | Active Directory practice *(Coming Soon)* |
+| 🌐 Networking Lab | TCP/IP, DNS, DHCP documentation *(Coming Soon)* |
+| ⚡ PowerShell Scripts | IT automation scripts *(Coming Soon)* |
 
 ---
 
-## 🎓 Certificates
+# 📚 Currently Learning
 
-- **Pathway AI Buddy - AI Literacy**
-- **Cyber Security 101 (BorntoDev Academy)**
-- **Cybersecurity Fundamentals (Cisco Networking Academy)**
-- **Networking Basics (Cisco Networking Academy)**
-- **Operating Systems Basics (Cisco Networking Academy)**
+- Windows Server
+- Active Directory
+- PowerShell
+- Linux Administration
+- Docker (Basic)
 
 ---
 
-## 📫 Contact & Links
+# 🎯 Career Goal
 
-- **Email**: season.rat28@gmail.com | season.rat28@outlook.co.th
-- **LinkedIn**: [Arnon Rattanaphan](https://www.linkedin.com/in/arnon-rattanaphan-529a14440)
-- **Portfolio**: [https://seasonrat28.github.io/Resume-Anon/](https://seasonrat28.github.io/Resume-Anon/)
+To build a long-term career as an **IT Support** and **System Administrator**, continuously improving my skills in Windows Server, Networking, Infrastructure, and IT Automation.
+
+---
+
+# 📊 GitHub Statistics
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=seasonrat28&show_icons=true&hide_border=true&theme=transparent" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=seasonrat28&layout=compact&hide_border=true&theme=transparent" />
+
+</p>
+
+---
+
+# 🔥 GitHub Streak
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=seasonrat28&theme=transparent&hide_border=true"/>
+
+</p>
+
+---
+
+# 📈 Activity Graph
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=seasonrat28&theme=github-compact&hide_border=true"/>
+
+</p>
+
+---
+
+# 📫 Contact Me
+
+<p align="center">
+
+<a href="mailto:season.rat@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://github.com/seasonrat28">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://seasonrat28.github.io/Resume-Anon/">
+<img src="https://img.shields.io/badge/Portfolio-0078D7?style=for-the-badge&logo=googlechrome&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+<div align="center">
+
+### ⭐ Thank you for visiting my GitHub Profile ⭐
+
+*"Keep learning. Keep improving. Keep solving problems."*
+
+</div>
