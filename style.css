@@ -124,7 +124,7 @@
 /* Experience Card Inside Timeline */
 .timeline-item .experience {
   position: relative;
-  padding: 26px 28px;
+  padding: 32px 34px 36px;
   border: 1px solid #e2e8f0;
   border-radius: 18px;
   background: #fff;
@@ -180,6 +180,30 @@
   background: #eff6ff;
   color: #1d4ed8;
   border-color: #dbeafe;
+}
+
+
+.timeline-item .experience ul {
+  padding-left: 20px;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.timeline-item .experience li {
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 1.8;
+}
+.timeline-item .achievements-section {
+  margin-top: 1.4rem;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #eef2f7;
+}
+.timeline-item .achievements-section ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
 }
 
 /* Responsive: Single column on tablets & mobile */
